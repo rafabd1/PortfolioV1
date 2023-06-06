@@ -1,30 +1,15 @@
-import { extendTheme } from '@chakra-ui/react';
+import { extendTheme} from '@chakra-ui/react';
+import colors from './colors';
+import components from './components';
+
+const config = {
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
+}
 
 const theme = extendTheme({
-  initialColorMode: 'light',
-  useSystemColorMode: true,
-  colors: {
-    light: {
-      bg: '#FFFFFF',
-      text: '#000000',
-      // outras cores para o tema light
-    },
-    dark: {
-      bg: '#000000',
-      text: '#FFFFFF',
-      // outras cores para o tema dark
-    },
-  },
-  components: {
-    Box: {
-      baseStyle: {
-        bg: 'light.bg',
-        color: 'light.text',
-      },
-    },
-    // outros componentes e suas configurações
-  },
-  // outras configurações de estilo
+  config,
+  colors,
 });
 
 export default theme;
