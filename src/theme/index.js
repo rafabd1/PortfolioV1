@@ -1,6 +1,5 @@
 import { extendTheme} from '@chakra-ui/react';
 import colors from './colors';
-import components from './components';
 
 const config = {
   initialColorMode: 'dark',
@@ -8,6 +7,11 @@ const config = {
 }
 
 const theme = extendTheme({
+  fonts: {
+    heading: 'Inter',
+    body: 'Inter',
+    text: 'Inter'
+  },
   config,
   colors,
 });

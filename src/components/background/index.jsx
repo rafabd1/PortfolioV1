@@ -1,24 +1,20 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import './style.css';
+import { MousePositionContext } from '../../contexts/mousePositionProvider';
 
 const Background = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const mousePosition = useContext(MousePositionContext);
 
-  const handleMouseMove = (event) => {
-    setMousePosition({ x: event.clientX, y: event.clientY });
-  };
 
   return (
     <div
       className="background"
-      onMouseMove={handleMouseMove}
     >
-      {/* Conteúdo da sua página */}
       <div
         className="highlight"
         style={{
-          top: mousePosition.y - 0,
-          left: mousePosition.x - 0,
+          top: mousePosition.y,
+          left: mousePosition.x,
         }}
       ></div>
     </div>

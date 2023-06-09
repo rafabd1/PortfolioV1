@@ -1,0 +1,6 @@
+.socials{
+    position: fixed;
+    top: 85%;
+    transform: translate(0%, 85%);
+    display: flex;
+}
