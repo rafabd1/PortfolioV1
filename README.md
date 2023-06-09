@@ -10,13 +10,9 @@ Este é o meu portfolio pessoal em desenvolvimento, onde compartilho informaçõ
 - Node.js 🖥️
 - GraphQL 🌐
 
-## Como executar o projeto ▶️
+## Acessar o Portfólio 
 
-1. Clone o repositório: `git clone https://github.com/Rafael-BD/Portfolio-Pessoal/edit/main/README.md` 📥
-2. Navegue até a pasta do projeto: `cd Portfolio-Pessoal` 📂
-3. Instale as dependências: `npm install` 📦
-4. Execute o projeto: `npm start` ▶️
-5. Acesse no navegador: `http://localhost:3000` 🌐
+
 
 ## Em desenvolvimento 🚧
 
