@@ -18,7 +18,7 @@ export const getRepositories = async () => {
         return data.repos;
     } 
     catch (error) {
-        throw new Error('Falha ao obter os repositórios');
+        console.log('Falha ao obter os repositórios');
     }
     
 };

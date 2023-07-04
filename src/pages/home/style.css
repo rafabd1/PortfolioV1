@@ -1,5 +1,21 @@
 .main{
-    margin-left: 22%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60%;
     height: 100vh;
-    margin-right: 22%;
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    position: fixed;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    z-index: 999;
+    
+    align-items: center;
+    justify-content: center;
 }

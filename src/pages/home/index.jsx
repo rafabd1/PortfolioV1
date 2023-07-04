@@ -4,6 +4,7 @@ import Title from "../../components/title";
 import "./style.css";
 import Socials from "../../components/socials";
 import Projects from "../../components/projects";
+import About from "../../components/about";
 
 const Home = () => {
     const { colorMode, toggleColorMode } = useColorMode()
@@ -29,9 +30,13 @@ const Home = () => {
     return(
         <div>
             <div className="main">
-            <Title />
-            <Socials />
-            {!isMobile ? <Projects /> : null}
+              <Title />
+              <Socials />
+              <div className="content">
+                <About />
+                {!isMobile ? <Projects /> : null}
+              </div>
+              
             </div>
             {isMobile ? <Projects /> : null}
 
