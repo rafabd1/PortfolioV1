@@ -5,14 +5,23 @@ import "./style.css";
 const Title = () => {
 
     const { colorMode, toggleColorMode } = useColorMode()
-    const txtColor = colorMode.toString()+ ".txtColor"
+    const titleColor = colorMode.toString()+ ".title"
+    const subTitleColor = colorMode.toString()+ ".subTitle"
+    const bodyColor = colorMode.toString()+ ".body"
 
     return(
         <div className="title">
-            <Box maxW='20rem'>
-                <Heading color={txtColor} mb={0}>Rafael Bettini Dias</Heading>
-                <Heading color={txtColor} as='h4' size={"md"} mb={4}>Desenvolvedor React</Heading>
-                <Text color={txtColor} fontSize='xl'>
+            <Box 
+                maxW='25rem'
+                p={4}
+                backdropFilter={'blur(8px)'}
+                borderRadius="md"
+                border={'1px solid rgba(255, 255, 255, 0.08)'}
+
+            >
+                <Heading color={titleColor} mb={0}>Rafael Bettini Dias</Heading>
+                <Heading color={subTitleColor} as='h4' size={"md"} mb={4}>Desenvolvedor React</Heading>
+                <Text color={bodyColor} fontSize='xl'>
                     fqfqkq njndniqw nd njif dvjd njd fvfq frff 
                 </Text>
             </Box>

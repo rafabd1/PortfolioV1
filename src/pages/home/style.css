@@ -10,12 +10,26 @@
 
 .content{
     position: fixed;
-    top: 10%;
+    padding-top: 4%; /* Adiciona espaço no topo */
     right: 0;
     width: 40%;
     height: 100vh;
     z-index: 999;
-    
+    max-height:  100vh;
+    overflow-y: scroll;
     align-items: center;
     justify-content: center;
 }
+
+.line {
+    position: fixed;
+    top: 20%;
+    height: 2px;
+    background-color: #ffffff9d;
+    transition: width 0.3s ease;
+    z-index: 999;
+    border-radius: 10px;
+    justify-content: flex-start;
+    left: 20%;
+}
+

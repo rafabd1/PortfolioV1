@@ -1,24 +1,60 @@
 import React from "react";
 import "./style.css";
-import { Box } from "@chakra-ui/react";
+import { Box,useColorMode, Heading, Text, Highlight  } from "@chakra-ui/react";
+
+
 
 const About = () => {
+    const { colorMode, toggleColorMode } = useColorMode()
+    const titleColor = colorMode.toString()+ ".title"
+    const subTitleColor = colorMode.toString()+ ".subTitle"
+    const bodyColor = colorMode.toString()+ ".body"
+
     return(
         <Box 
             p={4}
-            marginBottom={20}
+            mb={"8rem"}
             width="70%"
+            backdropFilter={'blur(8px)'}
+            borderRadius="md"
+            border={'1px solid rgba(255, 255, 255, 0.08)'}
         >
-            <h1>About</h1>
-            <p>
-                I'm a software developer from Brazil. I'm currently working at <a href="https://www.avenuecode.com/" target="_blank" rel="noreferrer">Avenue Code</a> as a Frontend Developer.
-            </p>
-            <p>
-                I'm passionate about technology and I'm always looking for new challenges and opportunities to learn something new.
-            </p>
-            <p>
-                I'm currently working with ReactJS, React Native and NodeJS.
-            </p>
+            <Text color={bodyColor} fontSize=''>
+                <Highlight
+                    query={['spotlight', 'njif', 'frff']}
+                    styles={{ color: "#F7FAFC", fontWeight: "bold" }}
+                >
+                    With the Highlight component, you can spotlight words.
+                    fqfqkq njndniqw nd njif dvjd njd fvfq frff 
+                    odscnsdcjsncisncdji kncsjdnjsdsk cdscnscnscscdcsdcs
+                    sdcsd
+                    csdcscdsc scsdcscscscsc
+                    sdcscscscs
+                </Highlight>
+            </Text>
+            <br/>
+            <Text color={bodyColor} fontSize=''>
+                <Highlight
+                    query={['spotlight', 'njif', 'frff']}
+                    styles={{ color: "#F7FAFC", fontWeight: "bold" }}
+                >
+                    With the Highlight component, you can spotlight words.
+                    fqfqkq njndniqw nd njif dvjd njd fvfq frff 
+                    csdcscdsc scsdcscscscsc
+                    sdcscscscs
+                </Highlight>
+            </Text>
+            <br/>
+            <Text color={bodyColor} fontSize=''>
+                <Highlight
+                    query={['spotlight', 'njif', 'frff']}
+                    styles={{ color: "#F7FAFC", fontWeight: "bold" }}
+                >
+                    With the Highlight component, you can spotlight words.
+                    fqfqkq njndniqw nd njif dvjd njd fvfq frff 
+                </Highlight>
+            </Text>
+
         </Box>
     )
 }

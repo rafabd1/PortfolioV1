@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import './style.css';
 import { MousePositionContext } from '../../contexts/mousePositionProvider';
+import ParticlesBackground from './ParticlesBackground';
 
 const Background = () => {
   const mousePosition = useContext(MousePositionContext);
@@ -17,6 +18,8 @@ const Background = () => {
           left: mousePosition.x,
         }}
       ></div>
+
+      <ParticlesBackground />
     </div>
   );
 };
