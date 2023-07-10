@@ -1,6 +1,6 @@
 import React from "react";
 import { format, set } from 'date-fns';
-import { SimpleGrid, Box, Link, Skeleton, Stack, Heading, Text, useColorMode } from '@chakra-ui/react';
+import { SimpleGrid, Box, Link, Skeleton, Stack, Heading, Text, useColorMode, Divider } from '@chakra-ui/react';
 import {
   Tag,
   TagLabel,
@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { getRepositories } from "../../services/api";
+import Activity from "../../components/activity";
 import "./style.css";
 
 const Projects = () => {
@@ -39,6 +40,7 @@ const Projects = () => {
           {
           repositories.length > 0 ? (
             <SimpleGrid columns={1} spacing={5}>
+              <Divider width={"70%"} mb={5}/>
               {repositories.map((repo) => (
                 <Link
                   key={repo.name}
@@ -91,11 +93,16 @@ const Projects = () => {
                   
                 </Link>
               ))}
+              <Box mt={6} display={"flex"}>
+                  <Box ml={"9%"}/>
+                  <Activity />
+                </Box>
+              
               <Link display={"flex"} alignItems={"center"} href="https://github.com/Rafael-BD?tab=repositories" target="_blank">
                 <Text fontSize={"xl"} mt={5} color={titleColor}>
                   Veja mais no meu repositório do GitHub
                 </Text>
-                <ArrowForwardIcon mt={5} ml={2} w={6} h={6} color={bodyColor}/>
+                <ArrowForwardIcon mt={5} ml={2} w={6} h={6} color={bodyColor}/>            
               </Link>
               <Box mb={10}></Box>
             </SimpleGrid>

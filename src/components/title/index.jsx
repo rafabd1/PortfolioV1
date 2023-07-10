@@ -17,7 +17,7 @@ const Title = () => {
                 backdropFilter={'blur(8px)'}
                 borderRadius="md"
                 border={'1px solid rgba(255, 255, 255, 0.08)'}
-
+                backgroundColor= {'rgba(255, 255, 255, 0.08)'}     
             >
                 <Heading color={titleColor} mb={0}>Rafael Bettini Dias</Heading>
                 <Heading color={subTitleColor} as='h4' size={"md"} mb={4}>Desenvolvedor React</Heading>

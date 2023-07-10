@@ -18,6 +18,7 @@ const About = () => {
             backdropFilter={'blur(8px)'}
             borderRadius="md"
             border={'1px solid rgba(255, 255, 255, 0.08)'}
+            backgroundColor= {'rgba(255, 255, 255, 0.08)'}     
         >
             <Text color={bodyColor} fontSize=''>
                 <Highlight

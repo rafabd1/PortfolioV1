@@ -6,18 +6,11 @@ const Router = () => {
     return(
         <BrowserRouter>
           <Routes>
-          <Route path="/" element={<Home />}/>
-
+            <Route path="/" element={<Home />}/>
           </Routes>
         </BrowserRouter>
     )
 };
-
-//Carrega a página do edital e passa o id do edital como parametro
-// function Invoice() {
-//     let params = useParams();
-//     return Edital(params.editalId);
-// }
 
 
 export default Router;

@@ -8,7 +8,7 @@ import Socials from "../../components/socials";
 import Projects from "../../components/projects";
 import About from "../../components/about";
 import Experience from "../../components/experience";
-import { set } from "date-fns";
+
 
 
 const Home = () => {
