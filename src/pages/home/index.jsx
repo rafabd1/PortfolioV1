@@ -1,6 +1,5 @@
 import React, {useEffect, useState, useRef} from "react";
-import { Box, Heading, useColorMode, Button, Text  } from "@chakra-ui/react";
-import { MinusIcon } from '@chakra-ui/icons'
+import { Box } from "@chakra-ui/react";
 import { Scrollama, Step } from 'react-scrollama';
 import Title from "../../components/title";
 import "./style.css";
@@ -12,7 +11,6 @@ import Experience from "../../components/experience";
 
 
 const Home = () => {
-    const { colorMode, toggleColorMode } = useColorMode()
     const [isMobile, setIsMobile] = useState(false);
     const [currentStep, setCurrentStep] = useState(0);
     const [lastStep, setLastStep] = useState(0);

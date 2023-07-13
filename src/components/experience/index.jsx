@@ -1,16 +1,10 @@
 import React from "react";
-import { format, set } from 'date-fns';
-import { SimpleGrid, Box, Link, Skeleton, Stack, Heading, Text, useColorMode, Divider } from '@chakra-ui/react';
+import { SimpleGrid, Box, Link, Heading, Text, useColorMode, Divider } from '@chakra-ui/react';
 import {
   Tag,
   TagLabel,
-  TagLeftIcon,
-  TagRightIcon,
-  TagCloseButton,
 } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons'
-import { getRepositories } from "../../services/api";
-import "./style.css";
 
 const Projects = () => {
     const [jobs, setJobs] = React.useState([
@@ -23,7 +17,6 @@ const Projects = () => {
 
     const { colorMode, toggleColorMode } = useColorMode()
     const titleColor = colorMode.toString()+ ".title"
-    const subTitleColor = colorMode.toString()+ ".subTitle"
     const bodyColor = colorMode.toString()+ ".body"
     const titleB = colorMode.toString()+ ".titleB"
     const tag = colorMode.toString()+ ".tag"

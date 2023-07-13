@@ -4,21 +4,15 @@ import { SimpleGrid, Box, Link, Skeleton, Stack, Heading, Text, useColorMode, Di
 import {
   Tag,
   TagLabel,
-  TagLeftIcon,
-  TagRightIcon,
-  TagCloseButton,
 } from '@chakra-ui/react';
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { getRepositories } from "../../services/api";
 import Activity from "../../components/activity";
-import "./style.css";
 
 const Projects = () => {
     const [repositories, setRepositories] = React.useState([]);
-    const [technologies, setTechnologies] = React.useState([]);
     const { colorMode, toggleColorMode } = useColorMode()
     const titleColor = colorMode.toString()+ ".title"
-    const subTitleColor = colorMode.toString()+ ".subTitle"
     const bodyColor = colorMode.toString()+ ".body"
     const titleB = colorMode.toString()+ ".titleB"
     const tag = colorMode.toString()+ ".tag"

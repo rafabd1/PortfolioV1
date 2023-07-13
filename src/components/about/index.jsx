@@ -1,13 +1,9 @@
 import React from "react";
-import "./style.css";
 import { Box,useColorMode, Heading, Text, Highlight  } from "@chakra-ui/react";
-
 
 
 const About = () => {
     const { colorMode, toggleColorMode } = useColorMode()
-    const titleColor = colorMode.toString()+ ".title"
-    const subTitleColor = colorMode.toString()+ ".subTitle"
     const bodyColor = colorMode.toString()+ ".body"
 
     return(
@@ -22,37 +18,29 @@ const About = () => {
         >
             <Text color={bodyColor} fontSize=''>
                 <Highlight
-                    query={['spotlight', 'njif', 'frff']}
+                    query={['Full Stack']}
                     styles={{ color: "#F7FAFC", fontWeight: "bold" }}
                 >
-                    With the Highlight component, you can spotlight words.
-                    fqfqkq njndniqw nd njif dvjd njd fvfq frff 
-                    odscnsdcjsncisncdji kncsjdnjsdsk cdscnscnscscdcsdcs
-                    sdcsd
-                    csdcscdsc scsdcscscscsc
-                    sdcscscscs
+                    Desenvolvedor Full Stack com foco em progredir e aprender constantemente.               
                 </Highlight>
             </Text>
             <br/>
             <Text color={bodyColor} fontSize=''>
                 <Highlight
-                    query={['spotlight', 'njif', 'frff']}
+                    query={['React Native', 'Java', 'React', 'Python', 'Inteligência Artificial']}
                     styles={{ color: "#F7FAFC", fontWeight: "bold" }}
                 >
-                    With the Highlight component, you can spotlight words.
-                    fqfqkq njndniqw nd njif dvjd njd fvfq frff 
-                    csdcscdsc scsdcscscscsc
-                    sdcscscscs
+                    Tenho experiência em desenvolvimento de aplicativos móveis utilizando React Native, assim como programação web com Java, VueJs e principalmente React. 
+                    Também possuo conhecimentos básicos em Python na área de Data Science e Inteligência Artificial.
                 </Highlight>
             </Text>
             <br/>
             <Text color={bodyColor} fontSize=''>
                 <Highlight
-                    query={['spotlight', 'njif', 'frff']}
+                    query={['']}
                     styles={{ color: "#F7FAFC", fontWeight: "bold" }}
                 >
-                    With the Highlight component, you can spotlight words.
-                    fqfqkq njndniqw nd njif dvjd njd fvfq frff 
+                    Abaixo estão alguns projetos que desenvolvi e que estão disponíveis no meu GitHub.
                 </Highlight>
             </Text>
 

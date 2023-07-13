@@ -20,9 +20,9 @@ const Title = () => {
                 backgroundColor= {'rgba(255, 255, 255, 0.08)'}     
             >
                 <Heading color={titleColor} mb={0}>Rafael Bettini Dias</Heading>
-                <Heading color={subTitleColor} as='h4' size={"md"} mb={4}>Desenvolvedor React</Heading>
-                <Text color={bodyColor} fontSize='xl'>
-                    fqfqkq njndniqw nd njif dvjd njd fvfq frff 
+                <Heading color={subTitleColor} as='h4' size={"md"} mb={4}>Desenvolvedor Node Js</Heading>
+                <Text color={bodyColor} fontSize=''>
+                    Desenvolvedor Node.js júnior em busca de oportunidades na área de desenvolvimento web e mobile.
                 </Text>
             </Box>
         </div>

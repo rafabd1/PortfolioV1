@@ -1,7 +1,7 @@
 import { request } from 'graphql-request';
 import { extractTechnologies } from '../utils/extractTechnologies';
 
-const endpoint = 'http://localhost:3001/graphql';
+const endpoint = 'http://3.12.118.132:3001/graphql';
 
 export const getRepositories = async () => {
     const query = `

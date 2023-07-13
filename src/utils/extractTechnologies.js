@@ -1,4 +1,3 @@
-import { m } from "framer-motion";
 
 export const extractTechnologies = (repository) => {
     const { description, primaryLanguage } = repository;
@@ -51,7 +50,6 @@ export const extractTechnologies = (repository) => {
 
     primaryLanguage && technologies.push(primaryLanguage.name);
 
-    // Percorre a descrição e verifica se alguma tecnologia da lista está presente
     technologiesList.forEach((technology) => {
       if (description.includes(technology)) {
         technologies.push(technology);

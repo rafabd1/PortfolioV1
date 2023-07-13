@@ -6,15 +6,7 @@ import { Text, useColorMode, Heading } from "@chakra-ui/react";
 
 export default function Activity() {
     const { colorMode, toggleColorMode } = useColorMode()
-    const titleColor = colorMode.toString()+ ".title"
-    const subTitleColor = colorMode.toString()+ ".subTitle"
-    const bodyColor = colorMode.toString()+ ".body"
     const titleB = colorMode.toString()+ ".titleB"
-
-    const explicitTheme={
-        light: ['#f0f0f0', '#c4edde', '#7ac7c4', '#f73859', '#384259'],
-        dark: ['#383838', '#002244', '#004466', '#006699', '#0088cc'],
-    }; 
 
     const selectLastHalfYear = contributions => {
         const currentYear = new Date().getFullYear();
