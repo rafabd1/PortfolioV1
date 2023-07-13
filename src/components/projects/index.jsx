@@ -20,7 +20,6 @@ const Projects = () => {
     React.useEffect(() => {
         const fetchRepositories = async () => {
           const fetchedRepositories = await getRepositories();
-          console.log(fetchedRepositories);
           setRepositories(fetchedRepositories);
         };
       
