@@ -11,10 +11,5 @@ Este é o meu portfolio pessoal em desenvolvimento, onde compartilho informaçõ
 - GraphQL 🌐
 
 ## Acessar o Portfólio 
-
-
-
-## Em desenvolvimento 🚧
-
-Este projeto ainda está em desenvolvimento e novas funcionalidades e melhorias estão sendo adicionadas regularmente. Fique à vontade para acompanhar as atualizações!
+https://rafaelbettinidias.vercel.app/
 
