@@ -22,7 +22,7 @@ const Title = () => {
                 <Heading color={titleColor} mb={0}>Rafael Bettini Dias</Heading>
                 <Heading color={subTitleColor} as='h4' size={"md"} mb={4}>Desenvolvedor Node Js</Heading>
                 <Text color={bodyColor} fontSize=''>
-                    Desenvolvedor Node.js júnior em busca de oportunidades na área de desenvolvimento web e mobile.
+                    Desenvolvedor Node.js júnior em busca de oportunidades nas áreas de desenvolvimento web e mobile.
                 </Text>
             </Box>
         </div>
