@@ -18,15 +18,6 @@ const About = () => {
         >
             <Text color={bodyColor} fontSize=''>
                 <Highlight
-                    query={['Full Stack']}
-                    styles={{ color: "#F7FAFC", fontWeight: "bold" }}
-                >
-                    Desenvolvedor Full Stack com foco em progredir e aprender constantemente.               
-                </Highlight>
-            </Text>
-            <br/>
-            <Text color={bodyColor} fontSize=''>
-                <Highlight
                     query={['React Native', 'Java', 'React', 'Python', 'Inteligência Artificial']}
                     styles={{ color: "#F7FAFC", fontWeight: "bold" }}
                 >
