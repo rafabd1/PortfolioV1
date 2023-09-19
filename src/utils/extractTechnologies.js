@@ -44,6 +44,8 @@ export const extractTechnologies = (repository) => {
       'Symfony',
       'ASP.NET Core',
       'Flask',
+      'Redux',
+      'Jupyter'
     ];
   
     const technologies = [];
