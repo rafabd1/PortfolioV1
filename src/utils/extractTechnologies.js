@@ -45,7 +45,8 @@ export const extractTechnologies = (repository) => {
       'ASP.NET Core',
       'Flask',
       'Redux',
-      'Jupyter'
+      'Jupyter',
+      'Styled Components'
     ];
   
     const technologies = [];
