@@ -10,6 +10,3 @@ Este é o meu portfolio pessoal em desenvolvimento, onde compartilho informaçõ
 - Node.js 🖥️
 - GraphQL 🌐
 
-## Acessar o Portfólio 
-https://rafaelbettinidias.vercel.app/
-
